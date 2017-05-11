@@ -1,0 +1,10 @@
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.exe
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmMain.resources
+c:\users\administrator\documents\visual studio 2015\Projects\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmLogin.resources
