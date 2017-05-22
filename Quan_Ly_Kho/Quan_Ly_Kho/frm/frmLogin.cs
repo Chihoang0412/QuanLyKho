@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -55,6 +56,10 @@ namespace Quan_Ly_Kho
             {
                 if (textBox1.Text == lstAcc[i].Acc && textBox2.Text == lstAcc[i].Pass)
                 {
+                    System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                    config.AppSettings.Settings["user"].Value = textBox1.Text.ToString();
+                    config.Save(ConfigurationSaveMode.Modified);
+                    ConfigurationManager.RefreshSection("appSettings");
                     MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
                     this.Hide();
                     frmMain f2 = new frmMain();

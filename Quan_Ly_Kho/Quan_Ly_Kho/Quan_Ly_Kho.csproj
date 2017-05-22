@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,6 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ACCOUNT.cs" />
+    <Compile Include="BLL\BUS_ChiThietPhieuNhap.cs" />
+    <Compile Include="BLL\BUS_PhieuNhap.cs" />
+    <Compile Include="DAL\SQL_ChiTietPhieuNhap.cs" />
+    <Compile Include="DAL\SQL_PhieuNhap.cs" />
     <Compile Include="frm\frmChiTietPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +115,9 @@
     <Compile Include="KetNoiDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm\frmChiTietPhieuNhap.resx">
+      <DependentUpon>frmChiTietPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +152,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

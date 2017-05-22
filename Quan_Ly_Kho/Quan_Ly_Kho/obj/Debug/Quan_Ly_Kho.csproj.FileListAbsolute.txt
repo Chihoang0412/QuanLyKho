@@ -30,3 +30,5 @@ E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmLogin.resou
 E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmMain.resources
 E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.Properties.Resources.resources
 E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csproj.GenerateResource.Cache
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frm.frmPhieuNhap.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frm.frmChiTietPhieuNhap.resources

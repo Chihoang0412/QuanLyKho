@@ -108,7 +108,5 @@ namespace Quan_Ly_Kho.frm
                 }
             }
         }
-
-        
     }
 }
