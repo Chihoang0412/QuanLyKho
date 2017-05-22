@@ -99,5 +99,10 @@ namespace Quan_Ly_Kho
             textBox4.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             textBox5.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
         }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

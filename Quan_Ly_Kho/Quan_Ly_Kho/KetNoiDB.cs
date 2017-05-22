@@ -15,7 +15,7 @@ namespace Quan_Ly_Kho
         private SqlTransaction tran = null;
         public KetNoiDB()
         {
-            conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_HS-GV;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QLKhoHang;Integrated Security=True");
         }
 
         /// <summary>

@@ -19,3 +19,14 @@ C:\Users\Administrator\Documents\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\De
 C:\Users\Administrator\Documents\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.Properties.Resources.resources
 C:\Users\Administrator\Documents\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frm.frmHangHoa.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.exe.config
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.exe
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.pdb
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.exe
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\bin\Debug\Quan_Ly_Kho.pdb
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csprojResolveAssemblyReference.cache
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frm.frmHangHoa.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmLogin.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.frmMain.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.Properties.Resources.resources
+E:\GitHub\QuanLyKho\Quan_Ly_Kho\Quan_Ly_Kho\obj\Debug\Quan_Ly_Kho.csproj.GenerateResource.Cache
