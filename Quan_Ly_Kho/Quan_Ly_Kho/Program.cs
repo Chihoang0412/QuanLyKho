@@ -17,7 +17,7 @@ namespace Quan_Ly_Kho
             //DataAccess.SetupConnection("ADMIN\\SQLEXPRESS;database=QLKhoHang;integrated security=SSPI");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmMain());
         }
     }
 }
