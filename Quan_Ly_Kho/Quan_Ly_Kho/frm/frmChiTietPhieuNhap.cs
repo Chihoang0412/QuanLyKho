@@ -49,29 +49,41 @@ namespace Quan_Ly_Kho.frm
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            int result = bus.Them(cmbTenHH.SelectedValue.ToString(), txtSl.Text.ToString(), txtDonGia.Text.ToString());
-            if(result == 1)
+            if (check())
             {
-                MessageBox.Show("Thêm chi tiết thành công");
-                frmChiTietPhieuNhap_Load(sender, e);
-            }
-            else
+                int result = bus.Them(cmbTenHH.SelectedValue.ToString(), txtSl.Text.ToString(), txtDonGia.Text.ToString());
+                if (result == 1)
+                {
+                    MessageBox.Show("Thêm chi tiết thành công");
+                    frmChiTietPhieuNhap_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm chi tiết không thành công");
+                }
+            } else
             {
-                MessageBox.Show("Thêm chi tiết không thành công");
+                MessageBox.Show("Cần nhập đủ thông tin");
             }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            int result = bus.Sua(cmbTenHH.SelectedValue.ToString(), txtSl.Text.ToString(), txtDonGia.Text.ToString(), txtMa.Text.ToString());
-            if (result == 1)
+            if (check())
             {
-                MessageBox.Show("Sửa chi tiết thành công");
-                frmChiTietPhieuNhap_Load(sender, e);
-            }
-            else
+                int result = bus.Sua(cmbTenHH.SelectedValue.ToString(), txtSl.Text.ToString(), txtDonGia.Text.ToString(), txtMa.Text.ToString());
+                if (result == 1)
+                {
+                    MessageBox.Show("Sửa chi tiết thành công");
+                    frmChiTietPhieuNhap_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa chi tiết không thành công");
+                }
+            }else
             {
-                MessageBox.Show("Sửa chi tiết không thành công");
+                MessageBox.Show("Cần nhập đủ thông tin");
             }
         }
 
@@ -86,6 +98,24 @@ namespace Quan_Ly_Kho.frm
             else
             {
                 MessageBox.Show("Xóa chi tiết không thành công");
+            }
+        }
+
+        private bool check()
+        {
+            if (txtSl.Text == "" || txtDonGia.Text == "" ) return false;
+            else return true;
+        }
+
+        private void D_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

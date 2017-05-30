@@ -56,33 +56,47 @@ namespace Quan_Ly_Kho.frm
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            int result = bus.Them(txtTen.Text.ToString(), (int)cmbNcc.SelectedValue, txtGhiChu.Text.ToString());
-            if(result == 1)
+            if (check())
             {
-                MessageBox.Show("Thêm thành công");
-                frmPhieuNhap_Load(sender, e);
-                
+                int result = bus.Them(txtTen.Text.ToString(), (int)cmbNcc.SelectedValue, txtGhiChu.Text.ToString());
+                if (result == 1)
+                {
+                    MessageBox.Show("Thêm thành công");
+                    frmPhieuNhap_Load(sender, e);
+
+                }
+                else
+                {
+                    MessageBox.Show("Thêm không thành công");
+                }
             }
             else
             {
-                MessageBox.Show("Thêm không thành công");
+                MessageBox.Show("Cần nhập đủ thông tin");
             }
 
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            int result = bus.Sua(txtTen.Text.ToString(), (int)cmbNcc.SelectedValue, txtGhiChu.Text.ToString(), int.Parse(txtMa.Text.ToString()));
-            if (result == 1)
+            if (check())
             {
-                MessageBox.Show("Sửa thành công");
-                frmPhieuNhap_Load(sender, e);
-                btnSua.Visible = false;
-                btnXoa.Visible = false;
+                int result = bus.Sua(txtTen.Text.ToString(), (int)cmbNcc.SelectedValue, txtGhiChu.Text.ToString(), int.Parse(txtMa.Text.ToString()));
+                if (result == 1)
+                {
+                    MessageBox.Show("Sửa thành công");
+                    frmPhieuNhap_Load(sender, e);
+                    btnSua.Visible = false;
+                    btnXoa.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Sửa không thành công");
+                }
             }
             else
             {
-                MessageBox.Show("Sửa không thành công");
+                MessageBox.Show("Cần nhập đủ thông tin");
             }
         }
 
@@ -114,6 +128,12 @@ namespace Quan_Ly_Kho.frm
             frmChiTietPhieuNhap chitiet = new frmChiTietPhieuNhap();
             chitiet.ShowDialog();
             this.Visible = true;
+        }
+
+        private bool check()
+        {
+            if (txtGhiChu.Text == "" || txtTen.Text == "") return false;
+            else return true;
         }
     }
 }

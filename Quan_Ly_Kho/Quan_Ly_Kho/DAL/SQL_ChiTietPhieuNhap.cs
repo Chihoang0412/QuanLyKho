@@ -24,6 +24,7 @@ namespace Quan_Ly_Kho.DAL
 		                    , hh.ten as tenhh
 		                    , chitiet.soluong
 		                    , chitiet.dongia
+                            , (chitiet.soluong * chitiet.dongia) as thanhtien
                     from chitietphieunhap chitiet
                     inner join hanghoa hh on chitiet.hanghoama = hh.ma
                     where chitiet.phieunhapma = '" + id + "'";

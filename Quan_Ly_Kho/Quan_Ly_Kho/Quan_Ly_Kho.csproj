@@ -49,9 +49,13 @@
   <ItemGroup>
     <Compile Include="ACCOUNT.cs" />
     <Compile Include="BLL\BUS_ChiThietPhieuNhap.cs" />
+    <Compile Include="BLL\BUS_ChiTietPhieuXuat.cs" />
     <Compile Include="BLL\BUS_PhieuNhap.cs" />
+    <Compile Include="BLL\BUS_PhieuXuat.cs" />
     <Compile Include="DAL\SQL_ChiTietPhieuNhap.cs" />
+    <Compile Include="DAL\SQL_ChiTietPhieuXuat.cs" />
     <Compile Include="DAL\SQL_PhieuNhap.cs" />
+    <Compile Include="DAL\SQL_PhieuXuat.cs" />
     <Compile Include="frm\frmChiTietPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +122,9 @@
     <EmbeddedResource Include="frm\frmChiTietPhieuNhap.resx">
       <DependentUpon>frmChiTietPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmChiTietPhieuXuat.resx">
+      <DependentUpon>frmChiTietPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm\frmPhieuNhap.resx">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmPhieuXuat.resx">
+      <DependentUpon>frmPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

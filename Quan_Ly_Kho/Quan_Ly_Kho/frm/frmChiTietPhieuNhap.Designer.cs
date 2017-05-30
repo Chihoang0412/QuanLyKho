@@ -41,15 +41,15 @@
             this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbTenHH = new System.Windows.Forms.ComboBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.txtSl = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.txtSl = new System.Windows.Forms.TextBox();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.cmbTenHH = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,7 +61,7 @@
             this.dgvDanhSach.Location = new System.Drawing.Point(5, 240);
             this.dgvDanhSach.Name = "dgvDanhSach";
             this.dgvDanhSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhSach.Size = new System.Drawing.Size(658, 257);
+            this.dgvDanhSach.Size = new System.Drawing.Size(637, 257);
             this.dgvDanhSach.TabIndex = 0;
             this.dgvDanhSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellClick);
             // 
@@ -80,7 +80,7 @@
             this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 214);
+            this.panel1.Size = new System.Drawing.Size(326, 214);
             this.panel1.TabIndex = 10;
             // 
             // txtMa
@@ -179,10 +179,58 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txtDonGia);
-            this.panel2.Location = new System.Drawing.Point(376, 12);
+            this.panel2.Location = new System.Drawing.Point(355, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 214);
             this.panel2.TabIndex = 11;
+            // 
+            // cmbTenHH
+            // 
+            this.cmbTenHH.FormattingEnabled = true;
+            this.cmbTenHH.Location = new System.Drawing.Point(86, 20);
+            this.cmbTenHH.Name = "cmbTenHH";
+            this.cmbTenHH.Size = new System.Drawing.Size(193, 21);
+            this.cmbTenHH.TabIndex = 18;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(204, 143);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 17;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Visible = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(104, 143);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 16;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Visible = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(8, 143);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 15;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // txtSl
+            // 
+            this.txtSl.Location = new System.Drawing.Point(87, 61);
+            this.txtSl.Name = "txtSl";
+            this.txtSl.Size = new System.Drawing.Size(192, 20);
+            this.txtSl.TabIndex = 14;
+            this.txtSl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.D_KeyPress);
             // 
             // label6
             // 
@@ -217,59 +265,13 @@
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(192, 20);
             this.txtDonGia.TabIndex = 12;
-            // 
-            // txtSl
-            // 
-            this.txtSl.Location = new System.Drawing.Point(87, 61);
-            this.txtSl.Name = "txtSl";
-            this.txtSl.Size = new System.Drawing.Size(192, 20);
-            this.txtSl.TabIndex = 14;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(8, 143);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 15;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(104, 143);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 16;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Visible = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(204, 143);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 17;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Visible = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // cmbTenHH
-            // 
-            this.cmbTenHH.FormattingEnabled = true;
-            this.cmbTenHH.Location = new System.Drawing.Point(86, 20);
-            this.cmbTenHH.Name = "cmbTenHH";
-            this.cmbTenHH.Size = new System.Drawing.Size(193, 21);
-            this.cmbTenHH.TabIndex = 18;
+            this.txtDonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.D_KeyPress);
             // 
             // frmChiTietPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 517);
+            this.ClientSize = new System.Drawing.Size(646, 503);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvDanhSach);
