@@ -18,7 +18,7 @@ namespace Quan_Ly_Kho
         public frmLogin()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PF25KAL\Kevin;Initial Catalog=QLKhoHang;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=QLKhoHang;Integrated Security=True");
             con.Open();
             SqlDataAdapter da = new SqlDataAdapter("select * from taikhoan", con);
             DataTable dt = new DataTable();
@@ -104,6 +104,11 @@ namespace Quan_Ly_Kho
                 textBox1.PasswordChar = '\0';
                 textBox2.PasswordChar = '^';
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
