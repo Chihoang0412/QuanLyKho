@@ -104,5 +104,10 @@ namespace Quan_Ly_Kho
         {
             Application.Exit();
         }
+
+        private void hướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, System.IO.Path.Combine(Application.StartupPath, "HƯỚNG DẪN SỬ DỤNG CHƯƠNG TRÌNH QUẢN LÝ KHO.pdf"));
+        }
     }
 }
