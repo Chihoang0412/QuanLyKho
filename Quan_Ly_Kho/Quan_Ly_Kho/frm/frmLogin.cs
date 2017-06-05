@@ -18,7 +18,7 @@ namespace Quan_Ly_Kho
         public frmLogin()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection("server =(local)\\SQLEXPRESS;database=QLKhoHang;integrated security=SSPI");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-PF25KAL\Kevin;Initial Catalog=QLKhoHang;Integrated Security=True");
             con.Open();
             SqlDataAdapter da = new SqlDataAdapter("select * from taikhoan", con);
             DataTable dt = new DataTable();
@@ -62,8 +62,8 @@ namespace Quan_Ly_Kho
                     ConfigurationManager.RefreshSection("appSettings");
                     MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
                     this.Hide();
-                    frmMain f2 = new frmMain();
-                    f2.Show();
+                    frmMain frmMain = new frmMain();
+                    frmMain.Show();
                     ok = true;
                     break;
                 }
